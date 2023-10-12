@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDSON HOTELS</title>
+
+    <link type="text/css" rel="stylesheet" href="/dashboard.css">
+
+
+        <script src="https://kit.fontawesome.com/5bb16e29b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+       <!--Navbar Section-->
+       <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">VIDSON HOTELS</a>
+    
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="/" class="navbar__links" id="home-page">Home</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="/about" class="navbar__links" id="about-page">About</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="/services" class="navbar__links" id="services-page">Services</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="/contact" class="navbar__links" id="services-page">Contact Us</a>
+            </li>
+
+            
+        </ul>
+        </div>
+    </nav>
+
+
+<section class="dash">
+
+  <% if (loggedIn) { %>
+    <h1>Hello, <%= username %>!</h1>
+    <% } else { %>
+      <h1>Welcome!</h1>
+      <% } %>
+      <h2>Welcome to Vidson Hotels, where luxury meets comfort.</h2>
+      
+      
+      
+      <div class="yeah">
+        <div class="yes">
+            <h3>Explore the wonders of our facilities</h3>
+           
+            <div class="out">
+                <div class="picture-grid">
+                    <img class="picture" src="/images/hotel.jpg" alt="Image 1">
+                    <img class="picture" src="/images/hotel2.jpg" alt="Image 2">
+                    <img class="picture" src="/images/hotel3.jpg" alt="hotel 3">
+                    <img class="picture" src="/images/hotel4.jpg" alt="hotel 4">
+                    <img class="picture" src="/images/hotel5.jpg" alt="hotel 5">
+                    <img class="picture" src="/images/hotel6.jpg" alt="hotel 6">
+                    <img class="picture" src="/images/hotel7.jpg" alt="hotel 7">
+                    <img class="picture" src="/images/hotel8.jpg" alt="hotel 8">
+                </div>
+
+
+              <button class="btn-2" id="btn" > <a href="/user/logout">LOG OUT</a></button>
+              <button class="btn-2" id="btn" > <a href="/home">HOME</a></button>
+            
+            </div>
+
+        </div>
+    </div>
+    
+  </section>
+    
+<!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="/">How it works</a>
+                    <a href="/">Testimonials</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Terms of Service</a> 
+                </div>
+
+                <div class="footer__link--items">
+                    <h2>Contact Us</h2>
+                    <a href="/">Contact</a>
+                    <a href="/">Support</a>
+                    <a href="/">Destinations</a>
+                </div>
+          </div>
+
+          <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Videos</h2>
+                    <a href="/">Submit Video</a>
+                    <a href="/">Ambassadors</a>
+                    <a href="/">Agency</a>
+                </div>
+
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="/">Instagram</a> <a href="/">Facebok</a>
+                    <a href="/">Youtube</a>  <a href="/">Twitter</a> 
+                </div>
+            </div>
+
+
+            
+        </div>
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo">VIDSON HOTELS</a>
+                </div>
+                <p class="website__rights">© VIDSON HOTELS 2022. All rights reserved</p>
+                <div class="social__icons">
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>  
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+<script type="application/json" src="/dashboard.js"></script>
+
+  </body>
+</html>
